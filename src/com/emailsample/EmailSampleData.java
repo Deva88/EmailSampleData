@@ -13,9 +13,7 @@ public class EmailSampleData {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter email: ");
 		String email = sc.next();
-		if (Pattern.matches(
-				"[a-zA-Z0-9][a-zA-Z0-9_.]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+",
-				email)) {
+		if (Pattern.matches("[a-zA-Z0-9][a-zA-Z0-9_.]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+", email)) {
 
 			System.out.println("Email Id valid");
 			return true;
